@@ -1,13 +1,3 @@
-{%
-  set body_classes = [
-    logged_in ? 'user-logged-in',
-    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-    node_type ? 'page-node-type-' ~ node_type|clean_class,
-    db_offline ? 'db-offline',
-    theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
-    theme.has_glyphicons ? 'has-glyphicons',
-  ]
-%}
 <!DOCTYPE html>
 <html {{ html_attributes }}>
   <head>
@@ -16,12 +6,12 @@
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
-  <body{{ attributes.addClass(body_classes) }}>
+  <body>
     <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
     <nav>
-        {{page.navigation}}
+        {{page.navbar}}
 			<div id="tc-navbar" class="navbar">
 				<a href="#"><i class="fas fa-arrow-left"></i></a>
 				<a href="#"><img id="home-button" src="tc_logo2.svg"/></a>
@@ -35,12 +25,12 @@
         </div>
 
 		<div id="wrapper">
-        {{page.content}}
 			<a href="index_tk.html" class="card-top no-select">
 				<p>Gå till T-konventet</p>
 			</a>
 
 			<div id="cards-wrapper">
+			{{page.content}}
 				<div class="card-container">
 					<a href="template_evenemang.html" class="card card-blue no-select" style="background-image: url(img/2.png)">
 						<p>Evenemang</p>
@@ -103,6 +93,4 @@
 				></a>
 			</div>
 		</div>
-    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
-  </body>
-</html>
+</body>

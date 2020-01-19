@@ -7,7 +7,7 @@ description: 'Ett Bootstrap 3 sub-theme for Teknikcollege Stenungsund.'
 package: 'Bootstrap'
 
 regions:
-  navigation: 'Navigation'
+  navbar: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Header'
   highlighted: 'Highlighted'
