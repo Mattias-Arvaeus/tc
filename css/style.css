@@ -1,7 +1,36 @@
 /**
  * If using a CSS pre-processor, tell it to overwrite this file. If not, place
  * your custom CSS modifications here.
+ *
+ * 
+ * TC Orange
+ * HEX: #d39100
+ * RGB: 211 145 0
+ * 
+ * TC Blue
+ * HEX: #29568f
+ * RGB: 41 86 143
+ * 
+ * TC Grey
+ * HEX: #555555
+ * RGB: 85 85 85
+ * 
+ * TC Turquoise
+ * HEX: #558c8d
+ * RGB: 53 140 141
+ * 
+ * TC Black
+ * HEX: #202020
+ * RGB: 32 32 32
+ * 
+ * TC White
+ * HEX: #f1f1f1
+ * RGB: 241 241 241
+ *
+ * 
+ * 
  */
+<<<<<<< HEAD
  @font-face {
 	font-family: OpenSans;
 	src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
@@ -532,4 +561,33 @@ a.special {
 
 .card-teal {
 	background-color: #31b1b1;
+=======
+
+html, body {
+  background: #f1f1f1;
+  color: #202020;
+}
+
+header.navbar {
+  background: #29568f;
+}
+
+#navbar a {
+  color: #f1f1f1;
+}
+
+header li:hover {
+  background: #d39100;
+}
+
+.region-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: bottom;
+}
+
+.btn-primary {
+  background: #29568f;
+>>>>>>> 2b60e79acdc8fd772b71fe0eda49c659eeb65bc5
 }
