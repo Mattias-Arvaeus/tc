@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <head-placeholder token="{{ placeholder_token|raw }}">
+		<title>{{ head_title|safe_join(' | ') }}</title>
+		<css-placeholder token="{{ placeholder_token|raw }}">
+		<js-placeholder token="{{ placeholder_token|raw }}">
+    </head>
+    <body>
+	<nav>	{{page.navigation}}
+		<div id="tk-navbar" class="navbar">
+			<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+			<a href="#"><img id="home-button" src="tc_logo2.svg"></a>
+			<a href="search.html"><i class="fas fa-search"></i></a>
+		</div>
+	</nav>
+	
+	<div id="logo-tk">
+	.
+	</div>
+
+
+
+<div id="wrapper">
+
+	<div id="cards-wrapper">
+	{{page.sidebar_second}}
+	<div class="card-container">
+		
+		<a href="test.html" class="card card-orange no-select" style="background-image: url(/sites/default/files/2020-01/1.jpg)">
+			<p>Schema</p>
+		</a>
+		
+		<a href="test.html" class="card card-teal no-select" style="background-image: url(img/5.png)">
+			<p>Workshops</p>
+		</a>
+		
+		<a href="test.html" class="card card-blue no-select" style="background-image: url(img/it.jpg)">
+			<p>Digitaliserings-<br>mässan</p>
+		</a>
+		
+		<a href="test.html" class="card card-orange no-select special" style="background-image: url(img/2.png)">
+			<p>Hogia</p>
+		</a>
+		
+	</div>
+	
+	<div class="card-container">
+	
+		<a href="test.html" class="card card-blue no-select" style="background-image: url(img/map.jpg)">
+			<p>Kartor</p>
+		</a>
+		
+		<a href="test.html" class="card card-orange no-select" style="background-image: url(img/1.jpg)">
+			<p>Föreläsare</p>
+		</a>
+		
+		<a href="test.html" class="card card-teal no-select" style="background-image: url(img/3.png)">
+			<p>Utvärdering</p>
+		</a>
+		
+		<a href="test.html" class="card card-blue no-select special" style="background-image: url(img/8.jpg)">
+			<p>Ordförande<br>har ordet</p>
+		</a>
+		
+		
+	</div>
+	
+	</div>
+	
+</div>
+
+	
+<script type="text/javascript" src="cordova.js"></script>
+	</body>	
+
+</html>

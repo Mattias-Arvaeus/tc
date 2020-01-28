@@ -30,16 +30,139 @@
  * 
  * 
  */
-<<<<<<< HEAD
- @font-face {
+
+
+
+@font-face {
 	font-family: OpenSans;
-	src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+	/*src: url("fonts/Open_Sans/OpenSans-Regular.ttf");*/
+	src: url(/sites/default/files/2020-01/OpenSans-Regular.ttf);
 }
 
 @font-face {
 	font-family: Montserrat;
 	src: url("fonts/Montserrat/Montserrat-Regular.ttf");
 }
+
+
+/*Drupal fix*/
+
+/*.menu, .menu--main, .navbar-nav {
+	background-color: #000;
+}*/
+
+div.content {
+	/*display: flex;
+	flex-direction: row;
+	justify-content: center;*/
+}
+
+
+.menu--main {
+	background-color: #FFF;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*background-color: #000;*/
+	justify-content: center;
+	background-color: rgba(0,0,0,0);
+	
+	padding: 0;
+	/*padding: 3em*/
+	margin: 0;
+	color: rgba(0,0,0,0);
+	
+	width: 100%;
+	height: auto;
+	
+}
+
+.menu--main:nth-child(odd) a {
+	background-image: url(/sites/default/files/2020-01/1.jpg);
+	/*display: none;*/
+}
+
+
+/*Vanligt kort*/
+.menu--main > li {
+	display: block;
+	width: 48.75%;
+	/*background-color: #ff0000;*/
+}
+
+/*Översta kortet*/
+.menu--main > li.first {
+	display: block;
+	width: 100%;
+	/*background-color: #ff0000;*/
+}
+
+
+/*Översta kortet, a-tagg*/
+.menu--main > li.first > a {
+	display: block;
+	position: relative;
+	/*color: rgba(0,0,0,0);*/
+	color: #FFF;
+	font-family: OpenSans;
+	padding: 2.5em 0 4em 0;
+	margin: 0.5em auto 0 auto;
+	border-radius: 0.3em;
+	width: 95%;
+	overflow: hidden;
+	
+	/*background-color: #000;*/
+	
+	background-image: url(/sites/default/files/2020-01/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	text-align: center;
+}
+
+.menu--main li a {
+	display: block;
+	position: relative;
+	/*color: rgba(0,0,0,0);*/
+	color: #FFF;
+	font-family: OpenSans;
+	padding: 2.5em 0 4em 0;
+	margin: 0.5em auto 0 auto;
+	border-radius: 0.3em;
+	width: 95%;
+	overflow: hidden;
+	
+	background-color: #ff0000;
+	
+	/*background-image: url("shrek.png");*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.col-sm-13, div.contextual-region, div.region-sidebar-first, aside.col-sm-3 {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.row {
+	margin: 0;
+}
+
+
+
+
 
 body, html {
 	margin: 0;
@@ -51,6 +174,7 @@ body, html {
 h1 {
 	font-family: Montserrat;
 }
+
 
 p {
 	font-family: OpenSans;
@@ -157,23 +281,6 @@ p a {
 	font-size: 1.1em;
 }
 
-/*#info-title:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	background-color: #4789c6;
-	opacity: 1;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	z-index: -1;
-}*/
-
-
 
 #logo-tc {
 	width: 100%;
@@ -274,6 +381,7 @@ p a {
 nav {
 	margin: 0;
 	padding: 0;
+	border-radius: 0;
 }
 
 .navbar {
@@ -301,10 +409,12 @@ nav {
 
 #tc-navbar {
 	background-color: #214574;
+	border-radius: 0;
 }
 
 #tk-navbar {
 	background-color: #489863;
+	border-radius: 0;
 	/*background-color: #31b1b1;*/
 }
 
@@ -339,7 +449,7 @@ nav {
 }
 
 a.special {
-	margin-bottom: 5em;
+	margin-bottom: 6.5em;
 }
 
 
@@ -561,12 +671,11 @@ a.special {
 
 .card-teal {
 	background-color: #31b1b1;
-=======
 
-html, body {
+/*html, body {
   background: #f1f1f1;
   color: #202020;
-}
+}*/
 
 header.navbar {
   background: #29568f;
@@ -589,5 +698,5 @@ header li:hover {
 
 .btn-primary {
   background: #29568f;
->>>>>>> 2b60e79acdc8fd772b71fe0eda49c659eeb65bc5
 }
+
