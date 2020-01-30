@@ -69,6 +69,7 @@ a.logo {
 	
 }
 
+
 div.region-header {
 	display: flex;
 	justify-content: center;
@@ -87,6 +88,11 @@ div.region-header {
 	background-color: #489863;
 	left: 0;
 	right: 0;
+
+
+
+.navbar {
+	border-radius: 0;
 }
 
 .menu--footer li a, .menu--footer li a:visited, .menu--footer li a:hover {

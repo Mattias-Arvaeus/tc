@@ -7,15 +7,15 @@ description: 'A Drupal Bootstrap 3 based sub-theme.'
 package: 'Bootstrap'
 
 regions:
-  navigation: 'Navigation'
+  navbar: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Top Bar'
+  header: 'Header'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
-  footer: 'Footer'
+  footer: 'Main Navigation'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
