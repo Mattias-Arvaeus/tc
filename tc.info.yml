@@ -2,8 +2,8 @@ core: 8.x
 type: theme
 base theme: bootstrap
 
-name: 'TC'
-description: 'Ett Bootstrap 3 sub-theme for Teknikcollege Stenungsund.'
+name: 'Tc'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
 package: 'Bootstrap'
 
 regions:
@@ -18,6 +18,9 @@ regions:
   footer: 'Main Navigation'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries:
+    - tc/css/fonts
 
 libraries-extend:
   bootstrap/framework:
