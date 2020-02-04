@@ -1,20 +1,28 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html {{ html_attributes }}>
+  <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body>
-    <nav> {{page.navigation}}
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+    <nav>
+        {{page.navbar}}
 			<div id="tc-navbar" class="navbar">
 				<a href="#"><i class="fas fa-arrow-left"></i></a>
-				<a href="#"><img id="home-button" src="../images/tc_logo2.svg"/></a>
+				<a href="#"><img id="home-button" src="tc_logo2.svg"/></a>
 				<a href="search.html"><i class="fas fa-search"></i></a>
 			</div>
 		</nav>
 
-		<div id="logo-tc"><!--<img id="logo-img" src="tk_logo.svg">-->.</div>
+		<div id="logo-tc">
+        {{page.header}}
+        <!--<img id="logo-img" src="tk_logo.svg">-->.
+        </div>
 
 		<div id="wrapper">
 			<a href="index_tk.html" class="card-top no-select">
@@ -22,7 +30,7 @@
 			</a>
 
 			<div id="cards-wrapper">
-            {{page.sidebar_second}}
+			{{page.content}}
 				<div class="card-container">
 					<a href="template_evenemang.html" class="card card-blue no-select" style="background-image: url(img/2.png)">
 						<p>Evenemang</p>
@@ -67,7 +75,7 @@
 				Följ oss på våra sociala medier<br /><span>@tcstenungsund</span>
 			</p>
 
-			<div class="social-flex"> {{page.highlighted}}
+			<div class="social-flex">
 				<a
 					class="space-bottom-1 social-icon"
 					onclick="window.open('https://www.facebook.com/tcstenungsund/', '_system'); return false;"
@@ -81,8 +89,8 @@
 				<a
 					class="space-bottom-1 social-icon"
 					onclick="window.open('https://twitter.com/tcstenungsund?lang=sv', '_system'); return false;"
-					><i class="fab fa-twitter"></i></a>
+					><i class="fab fa-twitter"></i
+				></a>
 			</div>
 		</div>
-  </body>
-</html>
+</body>
