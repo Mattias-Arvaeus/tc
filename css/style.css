@@ -160,7 +160,7 @@ div.region-header {
 }
 
 /*Översta kortet*/
-.menu--main > li.first {
+.menu--main > li.first, .menu--main > li.last {
 	display: block;
 	width: 100%;
 	/*background-color: #ff0000;*/
@@ -228,7 +228,8 @@ div.region-header {
 	width: 95%;
 	overflow: hidden;
 	
-	background-color: #ff0000;
+	/*background-color: #ff0000;*/
+	background-color: #29568f;
 	
 	/*background-image: url("shrek.png");*/
 	background-size: cover;
