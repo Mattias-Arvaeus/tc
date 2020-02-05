@@ -1,0 +1,19 @@
+a[href="/schema"] {
+    background-image: url('../images');
+}
+
+a[href="/dinner"] {
+    background-image: url('../images');
+}
+
+a[href="/info"] {
+    background-image: url('../images');
+}
+
+a[href="/workshop"] {
+    background-image: url('../images');
+}
+
+a [href="/survey"] {
+    background-image: url('../images');
+}
