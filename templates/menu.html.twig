@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="menu.css"/>
+		<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css" />
+		<title>Festmåltid Meny | T-Konventet</title>
+	</head>
+	<body>
+		<nav>
+			{{ page.navigtion }}
+			<div id="tk-navbar" class="navbar">
+				<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+				<a href="index.html"><img id="home-button" src="tc_logo2.svg"/></a>
+				<a href="search.html"><i class="fas fa-search"></i></a>
+			</div>
+		</nav>
+
+		<div id="wrapper">
+            <div id="info-title" class="teal">
+				{{ page.highlighted }}
+				<h1>MENY</h1>
+			</div>
+		    <div id="body-content">
+				{{ page.content }}
+                <p class="course-text">Förrätt</p>
+                <p>Insert menu item here</p>
+                <div class="break-line"></div>
+                <p class="course-text">Huvudrätt</p>
+                <p>INSERT MENY ITEM HERE</p>
+                <div class="break-line"></div>
+                <p class="course-text">Efterrätt</p>
+                <p>INSERT glass HERE</p>
+                <div class="break-line"></div>
+
+                <h2 class="special-servings">Special Kost</h2>
+                <p>ev. INSERT SPECIAL KOST HERE</p>
+            </div>
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+	</body>
+</html>

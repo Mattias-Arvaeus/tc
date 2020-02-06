@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<head-placeholder token="{{ placeholder_token|raw }}">
+		<title>{{ head_title|safe_join(' | ') }}</title>
+		<css-placeholder token="{{ placeholder_token|raw }}">
+		<js-placeholder token="{{ placeholder_token|raw }}">
+	</head>
+	<body>
+		<nav>
+			{{ page.navigation }}
+			<div id="tk-navbar" class="navbar">
+				<a href="index.html"><i class="fas fa-arrow-left"></i></a>
+				<a href="index.html"><img id="home-button" src="tc_logo2.svg"/></a>
+				<a href="search.html"><i class="fas fa-search"></i></a>
+			</div>
+		</nav>
+
+		<div id="wrapper">
+		<div id="info-title" class="blue">
+			{{ page.highlighted }}
+			<h1>Workshop Anmälning</h1>
+		</div>
+			
+			<button class="submit-btn">Anmäl dig till Workshops</button>
+		<div id="body-content">
+			{{page.content}}
+
+		</div>
+		<div class="body-content"><button class="submit-btn">Anmäl dig till Workshops</button></div>
+		</div>
+
+	</body>
+</html>
