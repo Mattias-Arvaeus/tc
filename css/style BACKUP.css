@@ -36,12 +36,12 @@
 @font-face {
 	font-family: OpenSans;
 	/*src: url("fonts/Open_Sans/OpenSans-Regular.ttf");*/
-	src: url(/sites/default/files/2020-02/OpenSans-Regular.ttf);
+	src: url(/sites/default/files/2020-01/OpenSans-Regular.ttf);
 }
 
 @font-face {
 	font-family: Montserrat;
-	src: url(/sites/default/files/2020-02/Montserrat-Regular.ttf);
+	src: url("fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 
@@ -56,7 +56,7 @@ a.logo img {
 }
 
 a.logo {
-	background-image: url(/sites/default/files/2020-02/tk_logo.svg);
+	background-image: url("tk_logo.svg");
 	
 	/*content: 'hej';*/
 	width: 10em;
@@ -103,31 +103,30 @@ div.region-header {
 
 /*Vänsterpil*/
 .menu--footer li:nth-child(1) a {
-	background-image: url(/sites/default/files/2020-02/arrow-left.svg);
-	color: rgba(0,0,0,0);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 40% 40%;
-}
-
-/*Hemknappen*/
-.menu--footer li:nth-child(2) a {
-	background-image: url(/sites/default/files/2020-02/tc_logo2.svg);
+	background-image: url(/sites/default/files/2020-01/arrow-left_0.svg);
 	color: rgba(0,0,0,0);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 60% 60%;
-	text-align: center;
+}
+
+/*Hemknappen*/
+.menu--footer li:nth-child(2) a {
+	background-image: url(/sites/default/files/2020-01/tc_logo2.svg);
+	color: rgba(0,0,0,0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
 /*Sökknappen*/
 .menu--footer li:nth-child(3) a {
-	background-image: url(/sites/default/files/2020-02/search.svg);
+	background-image: url(/sites/default/files/2020-01/search.svg);
 	color: rgba(0,0,0,0);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 40% 40%;
+	background-size: 60% 60%;
 }
 
 
@@ -160,7 +159,7 @@ div.region-header {
 }
 
 /*Översta kortet*/
-.menu--main > li.first, .menu--main > li.last {
+.menu--main > li.first {
 	display: block;
 	width: 100%;
 	/*background-color: #ff0000;*/
@@ -183,7 +182,7 @@ div.region-header {
 	/*background-color: #000;*/
 	
 	/*background-image: url(/sites/default/files/2020-01/1.jpg);*/
-	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-02/schedule.jpg);
+	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-01/1.jpg);
 	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -205,7 +204,7 @@ div.region-header {
 	width: 95%;
 	overflow: hidden;
 	
-	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-01/8.jpg);
+	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-01/5.png);
 	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -228,8 +227,7 @@ div.region-header {
 	width: 95%;
 	overflow: hidden;
 	
-	/*background-color: #ff0000;*/
-	background-color: #29568f;
+	background-color: #ff0000;
 	
 	/*background-image: url("shrek.png");*/
 	background-size: cover;
@@ -243,12 +241,12 @@ div.region-header {
 
 .menu--main li:nth-child(2) a {
 
-	background-image: linear-gradient(152deg, rgba(49,177,177,0.7) 0%, rgba(49,177,177,0.7) 30%, rgba(1,61,61,0.7) 71%), url(/sites/default/files/2020-01/3.png);
+	background-image: linear-gradient(152deg, rgba(49,177,177,0.7) 0%, rgba(49,177,177,0.7) 30%, rgba(1,61,61,0.7) 71%), url(/sites/default/files/2020-01/2.png);
 	
 }
 
 .menu--main li:nth-child(3) a {
-	background-image: linear-gradient(152deg, rgba(66,135,245,0.7) 0%, rgba(66,135,245,0.7) 20%, rgba(1,45,116,0.7) 61%), url(/sites/default/files/2020-01/2.png);
+	background-image: linear-gradient(152deg, rgba(66,135,245,0.7) 0%, rgba(66,135,245,0.7) 20%, rgba(1,45,116,0.7) 61%), url(/sites/default/files/2020-01/3.png);
 }
 
 
@@ -257,7 +255,7 @@ div.region-header {
 }
 
 .menu--main li:nth-child(5) a {
-	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-01/5.png);
+	background-image: linear-gradient(152deg, rgba(211,145,0,0.7) 0%, rgba(211,145,0,0.7) 20%, rgba(119,61,1,0.7) 61%), url(/sites/default/files/2020-01/6.jpg);
 }
 
 
@@ -789,7 +787,6 @@ a.special {
 .card-teal {
 	background-color: #31b1b1;
 
-}
 /*html, body {
   background: #f1f1f1;
   color: #202020;
