@@ -3,6 +3,7 @@ framework:
     theme:
       css/style.css: {}
       css/img.css: {}
+      css/schema.css: {}
 
 # Uncomment for LESS source JavaScript files.
 #  js:
