@@ -103,7 +103,7 @@ div.region-header {
 
 /*Vänsterpil*/
 .menu--footer li:nth-child(1) a {
-	background-image: url(/sites/default/files/2020-02/arrow-left.svg);
+	background-image: url(/sites/default/files/2020-01/arrow-left_0.svg);
 	color: rgba(0,0,0,0);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -112,7 +112,7 @@ div.region-header {
 
 /*Hemknappen*/
 .menu--footer li:nth-child(2) a {
-	background-image: url(/sites/default/files/2020-02/tc_logo2.svg);
+	background-image: url(/sites/default/files/2020-01/tc_logo2.svg);
 	color: rgba(0,0,0,0);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -123,7 +123,7 @@ div.region-header {
 
 /*Sökknappen*/
 .menu--footer li:nth-child(3) a {
-	background-image: url(/sites/default/files/2020-02/search.svg);
+	background-image: url(/sites/default/files/2020-01/search.svg);
 	color: rgba(0,0,0,0);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -166,6 +166,9 @@ div.region-header {
 	/*background-color: #ff0000;*/
 }
 
+.menu--main > li.last {
+	margin-bottom: 8em;
+}
 
 /*Översta kortet, a-tagg*/
 .menu--main > li.first > a {
