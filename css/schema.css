@@ -48,7 +48,7 @@ a {
 	padding-right: 0.1rem;
 }
 
-p {
+p .active{
 	border-top: solid #4789c6 0.3rem;
 	padding: 0.3rem;
 	color: #555555;
